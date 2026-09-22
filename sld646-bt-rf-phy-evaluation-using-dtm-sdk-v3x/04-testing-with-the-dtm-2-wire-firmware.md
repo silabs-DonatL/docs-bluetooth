@@ -4,13 +4,9 @@ If a Bluetooth tester device is available, it should be used to evaluate the RF 
 
 To enable the DTM 2-wire communication between a commercial Bluetooth tester device (that is, the Upper Tester with the included RF PHY measurement capability) and the DUT, the latter needs to run a special firmware where the protocol is included. This special DTM 2-wire-capable firmware is available as an example application project in Bluetooth SDK v3x through Simplicity Studio® 5 (SSv5). This section provides a summary of the project creation and use process. It assumes you are familiar with building and flashing applications using the Bluetooth SDK v3.x with SSv5. For more information about these processes, see the online SSv5 User's Guide, available through the SSv5 help menu, or [Getting Started with Silicon Labs Bluetooth LE Development](https://docs.silabs.com/bluetooth/latest/bluetooth-getting-started-overview/).
 
-To create the project in SSv5, in the Launcher perspective, select the correct DUT in the Debug Adapter view. This correctly prepopulates the Target Board and Target Device (SoC or module) settings. In the **File** menu, select **New > Simplicity Studio Project Wizard**. The **Target, SDK and Toolchain Selection** dialog opens. Verify the target hardware, SDK version, and toolchain are correct. Click **NEXT**.
+To create the project in SSv6, select **Devices** and **Example Projects & Demos**. This correctly prepopulates the **Target Board** and **Target Device** (SoC or module) settings. Use the **Wireless Technology** and **Keyword filters** to search for a specific example, in this case **Bluetooth - SoC DTM**. In the top right corner make sure that the correct SDK is selected then, click on **Create**.
 
-![Simplicity Studio 5 Target, SDK and Toolchain Selection Dialog](resources/simplicity-studio-5-target-sdk-and-toolchain-selection-dialog.png)
-
-The Example Project Selection dialog opens. Use the Technology Type and Keyword filters to search for a specific example, in this case **Bluetooth - SoC DTM**. Select it and click **NEXT**.
-
-![Simplicity Studio 5 Example Project Selection Dialog](resources/simplicity-studio-5-example-project-selection-dialog.png)
+![Simplicity Studio 6 Example Project Selection Dialog](resources/simplicity-studio-5-example-project-selection-dialog.png)
 
 The Project Configuration dialog opens. You do not need to change any of the default values. Click **FINISH** to create the DTM example project.
 
@@ -53,7 +49,7 @@ Certain Bluetooth testers have no capability to generate RF signals with a power
 
 Configuring the device to use other pins and UART settings for the 2-wire UART than the defaults is done by configuring the Software Component.
 
-When you create a new project, the GATT Configurator is opened by default. To go to the Project Configurator, click the \<project>.slcp tab, or double-click the \<project>.slcp file in the Simplicity IDE Project Explorer view. Click the Software Components tab. Check the Configurable Components and Installed Components filters. Type "stream" in the search box. You should see only one IO Stream implementation named **exp**. Select **exp**.
+When you create a new project, the GATT Configurator is opened by default. To go to the Project Configurator, click the \<project>.slcp tab, or double-click the \<project>.slcp file in the Simplicity IDE Project Explorer view. Click the Software Components tab. Check the Configurable Components and Installed Components filters. Type "stream" in the search box. You should see only one IO Stream implementation named **vcom**. Select **vcom**.
 
 ![IO Stream Component Using UART](resources/io-stream-component-using-uart.png)
 
@@ -65,7 +61,7 @@ Instead of configuring the component, you can change configurations in the Pin T
 
 ![Pin Tool](resources/pin-tool.png)
 
-You can change the pin position from the Configure editor Pins tab. Select a pin, click the function to display the **Function** dropdown list, and select a function. Click the Software Component symbol to open the Component Editor. Changes made in the Pin Tool are not autosaved.
+You can change the pin position from the Configure editor Pins tab. Select a pin, click the function to display the **Function** pop-up window, and select a function. Click the Software Component symbol to open the Component Editor. Changes made in the Pin Tool are not autosaved.
 
 Once your changes are complete, compile and flash to test them.
 

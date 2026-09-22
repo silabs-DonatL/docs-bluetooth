@@ -38,7 +38,7 @@ These files and directories are present in the root directory of the project:
 
    You can also double-click the *\<projectname>.pintool* file in the Project Explorer view, shown highlighted in the figure above.
 
-2. Use this tool to modify the pin configuration of the device, for example, you can reassign the pins used for USART communication to the appropriate layout for a custom board design. You do this by selecting the desired pin in the list and then selecting its functionality from the drop-down list.
+2. Use this tool to modify the pin configuration of the device, for example, you can reassign the pins used for USART communication to the appropriate layout for a custom board design. You do this by selecting the desired pin in the list and then selecting its functionality from the pop-up window.
 
    ![pin tool example](resources/an1259-figure-4-3.png)
 

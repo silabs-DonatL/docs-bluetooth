@@ -60,7 +60,7 @@ The following procedure covers most NCP Commander functions.
 
    ![Commander issue commands](resources/an1259-v14-ncp-commander-issue-commands.png)
 
-9. To create periodic advertisement sets, select **Advertisement mode: Periodic**. To set the content of the packet, use the **Edit** option next to "Periodic Advertising Packets".
+9. To create periodic advertisement sets, select **Advertisement mode: Extended** and select option **Periodic**. To set the content of the packet, use the **Edit** option next to "Periodic Advertising Packets".
 
    ![Commander periodic advertising](resources/an1259-v14-ncp-commander-periodic-advertising.png)
 
