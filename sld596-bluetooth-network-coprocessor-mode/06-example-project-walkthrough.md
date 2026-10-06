@@ -4,7 +4,7 @@ This page describes the structure of the example NCP Host and Target projects, a
 
 ## NCP Target
 
-This section focuses on the NCP-specific part of the **Bluetooth - NCP** SSv6 project. You can find a general project description in [Silicon Labs Bluetooth C Application Developers Guide](https://docs.silabs.com/bluetooth/latest/bluetooth-c-soc-dev-guide-sdk-v9x/).
+This section focuses on the NCP-specific part of the **Bluetooth - NCP** SSv6 project. For a general project description, see the [Silicon Labs Bluetooth C Application Developers Guide](https://docs.silabs.com/bluetooth/latest/bluetooth-c-soc-dev-guide-sdk-v9x/).
 
 The **Bluetooth - NCP** example does not contain a GATT database. The dynamic GATT API can be used for building it. This is recommended because the target code does not need to be modified and synchronized with the Host code when the GATT database is updated.
 
@@ -38,7 +38,7 @@ These files and directories are present in the root directory of the project:
 
    You can also double-click the *\<projectname>.pintool* file in the Project Explorer view, shown highlighted in the figure above.
 
-2. Use this tool to modify the pin configuration of the device, for example, you can reassign the pins used for USART communication to the appropriate layout for a custom board design. You do this by selecting the desired pin in the list and then selecting its functionality from the pop-up window.
+2. Use this tool to modify the device pin configuration. For example, you can reassign the pins used for USART communication to match a custom board design. Select the desired pin in the list, and then select its function from the pop-up window.
 
    ![pin tool example](resources/an1259-figure-4-3.png)
 
@@ -109,9 +109,9 @@ This is a code snippet that corresponds to the `main` function. Because the Blue
 
 ![code snippet of main function](resources/an1259-figure-4-8.png)
 
-Once the USART and Bluetooth stack are initialized, the main loop continuously calls the component as well as the application state machine. The corresponding functions are `sl_main_process_action()` and `app_process_action()` respectively.
+After the USART and Bluetooth stack are initialized, the main loop continuously calls the component and application state machine. The corresponding functions are `sl_main_process_action()` and `app_process_action()`, respectively.
 
-The `sl_main_process_action()` handles Silicon Labs tasks and routines. It must *not be removed* from the loop.
+The `sl_main_process_action()`  function handles Silicon Labs tasks and routines. Do *not remove* it from the loop.
 
 The default USART settings are mentioned in the Host example section. Make sure that the target and the host use the same configuration. The configuration can be adapted with the help of the Pin Tool and the Project Configurator.
 
@@ -157,10 +157,11 @@ The remote wake-lock (direction: out) functionality can be used to wake up the h
 
 ## PC Host
 
-The PC host application project that comes with the SDK is written in C. The host-side source files for this project are copied / linked after a host project is generated from Simplicity Studio 6.
+The PC host application project included with the SDK is written in C. Simplicity Studio 6 copies or links the host-side source files after you generate a host project.
 
-The projects comprise only a few source and header files. Note, however, that many other files are referenced from the SDK in the makefile.
-For further details about the host side application please refer to [Host Side build](./04-secure-ncp.md#host-side).
+The projects contain only a few source and header files. However, the makefile references many other files from the SDK.
+
+For more information about the host-side application, see [Host Side build](./04-secure-ncp.md#host-side).
 
 ### BGAPI Support Files
 

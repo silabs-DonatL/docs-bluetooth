@@ -4,7 +4,7 @@
 
 The purpose of the Co-Processor Communication (CPC) Protocol is to act as a serial link multiplexer that allows data sent from multiple applications to be transported over a secure shared physical link. In CPC, data transfers between processors are segmented in sequential packets over endpoints. Transfers are guaranteed to be error-free and sent in order.
 
-Find more information about the CPC at [https://docs.silabs.com/gecko-platform/latest/platform-cpc-overview/](https://docs.silabs.com/gecko-platform/latest/platform-cpc-overview/).
+For more information about CPC, see [https://docs.silabs.com/gecko-platform/latest/platform-cpc-overview/](https://docs.silabs.com/gecko-platform/latest/platform-cpc-overview/).
 
 ## Usage
 
@@ -12,7 +12,7 @@ The CPC daemon acts as a bridge between the host and the target application. It 
 
 ![CPC daemon](resources/an1259-cpc-daemon.png)
 
-The NCP host by default does not contain usage of CPC. You need to build the application with **Host NCP CPC adapter (Linux only)** component.
+By default, the NCP host application does not use CPC. Build the application with the **Host NCP CPC adapter (Linux only)** component to enable CPC support.
 
 >**Note**: The Host NCP CPC adapter (Linux only) component is Experimental currently. 
 

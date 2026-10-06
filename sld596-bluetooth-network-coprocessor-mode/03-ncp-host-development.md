@@ -8,11 +8,11 @@ Bluetooth NCP Commander is an easy-to-use tool that can be used for testing diff
 
 ### Built-in Version
 
-1. To open the built-in Bluetooth NCP Commander, select **Tools** tab on the left side, browse **Bluetooth NCP Commander** and click **Open Tool**.
+1. To open the built-in Bluetooth NCP Commander, select **Tools** tab on the left side, browse **Bluetooth NCP Commander** and then select **Open Tool**.
 
 ![Compatible Tools](resources/an1259-launch-Bluetooth-NCP-Commander.png)
 
-2. Select the target device, and click **Connect**.
+2. Select the target device, and then select **Connect**.
 
    ![Connection Manager](resources/an1259-v14-connection-manager.png)
 
@@ -195,7 +195,7 @@ Simplicity Studio SDK contains NCP Host example projects for PC. These examples 
     ```
 9. The build output is created in a new *build/debug/* folder. Navigate to this folder, and then run`bt_host_empty.exe` with the interface as an argument.
 
-10. Once the UART connection with the device is established, the following should appear:
+10. After the UART connection to the device is established, the following appears:
 
 ``` 
     MINGW64 ~/SimplicityStudio/v6_workspace_2226/bt_host_empty

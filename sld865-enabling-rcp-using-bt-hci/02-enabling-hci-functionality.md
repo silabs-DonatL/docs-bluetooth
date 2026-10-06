@@ -65,7 +65,7 @@ For the basic HCI-enabled application in the RCP mode the following components a
 
 - HCI CPC component (if CPC transport protocol is used)
 
-Other components are required to make a reasonably functional application. For example, the **Connection** and **Advertising Base Feature** components are required (and installed by default) to make an application that can advertise and accept connections. If the application should be able to accept a large number of simultaneous connections, also including the **Even Connection Scheduling Algorithm** component is useful.
+Other components are required for a functional application. For example, the **Connection** and **Advertising Base Feature** components are required and installed by default for an application that advertises and accepts connections. To support a large number of simultaneous connections, also include the **Even Connection Scheduling Algorithm** component.
 
 ![Even Connection Scheduling Algorithm](./resources/sld865-image9.png)
 

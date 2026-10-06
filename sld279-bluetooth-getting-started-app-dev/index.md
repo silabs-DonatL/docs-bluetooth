@@ -8,7 +8,7 @@ Developing a Bluetooth application consists of two main steps: defining the GATT
 
 > **Note**: Beginning with Bluetooth SDK version 2.7.0.0, all devices must be loaded with the Gecko Bootloader as well as the application. While you are getting started, the easiest way to do this is to load any of the precompiled demo images that come with the bootloader configured as part of the image. When you flash your application it overwrites the demo application, but the bootloader remains. Subsequently you may wish to build your own bootloader, as described in *UG266: Silicon Labs Gecko Bootloader User’s Guide for GSDK 3.2 and Lower*, [Silicon Labs Gecko Bootloader User's Guide for GSDK 4.0 and Higher (series 1 and 2 devices)](/bluetooth/{build-docspace-version}/bootloader-user-guide-gsdk-4), or [Silicon Labs Gecko Bootloader User’s Guide for Series 3 and Higher](/bluetooth/{build-docspace-version}/bootloader-user-guide-series3-and-higher).
 
-New Project creation is done through the following steps:
+To create a new project, follow these steps:
 
 - Select the Example and the SDK
 
@@ -82,7 +82,7 @@ Click **Configure** to open the Component Editor and see a configurable componen
 
 ![Configurator view](resources/sld279-image37.png?darkModeUrl=resources/sld279-image37.png)
 
-As you change component configurations, your changes are automatically saved and project files are automatically generated. You can see the **Saved Changes** noticitaion in the middle of the Simplicity Studio.
+As you change component configurations, Simplicity Studio automatically saves your changes and generates the project files. The **Saved Changes** notification appears in the middle of the Simplicity Studio window.
 
 ![Build progress](resources/sld279-image38.png?darkModeUrl=resources/sld279-image38.png)
 
@@ -137,7 +137,7 @@ Characteristics are generally complex structures of fields. If you want to know 
 
 ### The Pin Tool
 
-Simplicity Studio 6 offers Pin Tool that allows you to easily configure new peripherals or change the properties of existing ones. In the Project folder, double-click on **\<project_name\>.pintool** file which opens the Pin Tool. The graphical view differs based on the chip.
+Simplicity Studio 6 offers Pin Tool that allows you to easily configure new peripherals or change the properties of existing ones. In the Project folder, double-click the **\<project_name\>.pintool** file to open the Pin Tool. The graphical view varies depending on the chip.
 
 ![The pin tool view 1](resources/pintool-start.png?darkModeUrl=resources/pintool-start.png)
 
@@ -157,7 +157,7 @@ To profile the current project, click Tools in the menu bar and select Energy Pr
 
 ![Energy Profiler Perspective](resources/sld279-image44.png?darkModeUrl=resources/sld279-image44.png)
 
-See *UG343: Multi-Node Energy Profiler User’s Guide* for details on how to use this tool. You can open the Energy Profiler by selecting **Tools** and **Energy Profiler**
+For more information about using this tool, see *UG343: Multi-Node Energy Profiler User’s Guide* . To open the Energy Profiler, select **Tools** > **Energy Profiler**.
 
 ![Perspective buttons](resources/sld279-image45.png?darkModeUrl=resources/sld279-image45.png)
 

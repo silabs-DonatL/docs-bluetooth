@@ -50,4 +50,4 @@ $ ./build/debug/bt_host_empty.exe -u COM<*> -s
 [I] Started advertising.
 ```
 
-Running the exe file without `-s` parameter will start a normal NCP Host application without encryption.
+Running the executable file without the  `-s` parameter starts a standard NCP Host application without encryption.
